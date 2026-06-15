@@ -1,0 +1,12 @@
+.DS_Store
+*.psd
+*.zip
+
+# Local/editor noise
+.idea/
+.vscode/
+
+# Reference-only folders not needed for the public static site
+POSTER_REF/
+logo_REF/
+MVP/

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTC | 지속 가능한 백패킹 커뮤니티</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=74" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="MTC 홈">
+      <img class="brand-logo brand-logo-en" src="logo_0612/모닝텐트클럽_영문 로고.png" alt="Morning Tent Club" />
+      <img class="brand-logo brand-logo-ko" src="logo_0612/모닝텐트클럽_한글 로고.png" alt="" aria-hidden="true" />
+    </a>
+
+    <nav class="main-nav" aria-label="주요 메뉴">
+      <a class="active" href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="#wild-map">Wild Map</a>
+      <a href="community.html">Community</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-controls="sideMenu" aria-expanded="false">
+      <span class="menu-lines" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span>Menu</span>
+    </button>
+  </header>
+
+  <div class="menu-backdrop" data-menu-close hidden></div>
+  <aside class="side-menu" id="sideMenu" aria-label="사용자 메뉴" hidden>
+    <div class="side-menu-head">
+      <span>Menu</span>
+      <button type="button" data-menu-close aria-label="메뉴 닫기">Close</button>
+    </div>
+    <nav class="side-menu-nav">
+      <a href="#">Login</a>
+      <a href="#">Profile</a>
+      <a href="#">My Bag</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="about-entry" aria-label="우리 소개">
+      <a href="about.html">About Us</a>
+    </section>
+
+    <section class="article-strip" id="articles" aria-label="아티클">
+      <div class="article-list" aria-label="아티클 목록">
+        <article class="article-card">
+          <a href="#">
+            <div class="article-copy">
+              <p class="article-category">가이드</p>
+              <h2>막 초보딱지 땐 3년차 백패커의 팁</h2>
+              <p class="article-summary">건방지게 입문자 가이드 비슷한걸 써봤습니다. 피드백 환영!</p>
+            </div>
+            <img src="../sample image/article_1.jpg" alt="제한구역 확인 아티클 이미지" />
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a href="#">
+            <div class="article-copy">
+              <p class="article-category">장비</p>
+              <h2>그거 진짜 필요한거 맞아? : 셰이크 다운</h2>
+              <p class="article-summary">진짜 필요한 것만 챙겨야 하는 이유. 저도 알고싶지 않았어요...</p>
+            </div>
+            <img src="../sample image/article_2.jpg" alt="비화식 백패킹 가이드 이미지" />
+          </a>
+        </article>
+
+        <article class="article-card">
+          <a href="#">
+            <div class="article-copy">
+              <p class="article-category">장비</p>
+              <h2>백패킹 장비 투자 공식</h2>
+              <p class="article-summary">비싼 장비를 하나만 살수있다면, 투자 대비 효율이 좋은 장비는 뭘까?</p>
+            </div>
+            <img src="../sample image/article_3.jpg" alt="지도 업데이트 아티클 이미지" />
+          </a>
+        </article>
+
+        <a class="article-more-banner" href="articles.html">아티클 더보기</a>
+      </div>
+    </section>
+
+    <section class="map-strip" id="wild-map" aria-label="와일드맵">
+      <a class="wild-map-banner" href="#" aria-label="Wild Map 바로가기">
+        <p class="wild-map-label">
+          <span>이번 주에 갈 박지, 문제없을까?</span>
+          <span class="wild-map-action">Wild Map 바로가기</span>
+        </p>
+        <img class="wild-map-banner-image" src="../sample image/산.png" alt="" aria-hidden="true" />
+      </a>
+    </section>
+
+    <section class="community-shell" id="community" aria-label="커뮤니티">
+      <div class="gallery">
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_1.jpg" alt="백패킹 피드 이미지 1" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>mtc.style</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 128개">
+                <span aria-hidden="true">&#9825;</span>
+                <span>128</span>
+              </div>
+            </div>
+            <p class="feed-caption">이번엔 짐 좀 줄였다고 생각했는데 또 8kg 넘음.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_2.jpg" alt="백패킹 피드 이미지 2" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>backpack.log</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 74개">
+                <span aria-hidden="true">&#9825;</span>
+                <span>74</span>
+              </div>
+            </div>
+            <p class="feed-caption">해 뜨기 전에 도착하려고 했는데 결국 늦잠 잤다.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_3.jpg" alt="백패킹 피드 이미지 3" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>trail.bound</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 92개">
+                <span aria-hidden="true">&#9825;</span>
+                <span>92</span>
+              </div>
+            </div>
+            <p class="feed-caption">바람 때문에 텐트 치는 데만 거의 한 시간 쓴 날.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_4.jpg" alt="백패킹 피드 이미지 4" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>camp.note</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 56개">
+                <span aria-hidden="true">&#9825;</span>
+                <span>56</span>
+              </div>
+            </div>
+            <p class="feed-caption">다음엔 물을 조금만 덜 챙겨도 될 것 같음.</p>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="사이트 정보">
+    <nav class="footer-links" aria-label="정책 및 고객지원">
+      <a href="#">고객지원</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">제휴제안</a>
+    </nav>
+    <div class="footer-info">
+      <p>모닝텐트클럽 / 사업자등록번호 000-00-00000</p>
+      <p>사업장 소재지: 서울특별시 OO구 OO로</p>
+      <p>전화: 010-0000-0000 이메일 morningtentclub@mtc.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=74"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTC Community | 모닝텐트클럽</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=74" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="MTC 홈">
+      <img class="brand-logo brand-logo-en" src="logo_0612/모닝텐트클럽_영문 로고.png" alt="Morning Tent Club" />
+      <img class="brand-logo brand-logo-ko" src="logo_0612/모닝텐트클럽_한글 로고.png" alt="" aria-hidden="true" />
+    </a>
+
+    <nav class="main-nav" aria-label="주요 메뉴">
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="index.html#wild-map">Wild Map</a>
+      <a class="active" href="community.html">Community</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-controls="sideMenu" aria-expanded="false">
+      <span class="menu-lines" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span>Menu</span>
+    </button>
+  </header>
+
+  <div class="menu-backdrop" data-menu-close hidden></div>
+  <aside class="side-menu" id="sideMenu" aria-label="사용자 메뉴" hidden>
+    <div class="side-menu-head">
+      <span>Menu</span>
+      <button type="button" data-menu-close aria-label="메뉴 닫기">Close</button>
+    </div>
+    <nav class="side-menu-nav">
+      <a href="#">Login</a>
+      <a href="#">Profile</a>
+      <a href="#">My Bag</a>
+    </nav>
+  </aside>
+
+  <main class="community-page">
+    <section class="community-feed" aria-label="커뮤니티 피드">
+      <div class="community-toolbar">
+        <div class="community-tabs" aria-label="피드 필터">
+          <a class="active" href="#" data-community-sort="latest">최신순</a>
+          <a href="#" data-community-sort="popular">인기순</a>
+        </div>
+        <form class="community-search" role="search" data-community-search-form>
+          <input type="search" name="q" placeholder="검색어를 입력하세요" autocomplete="off" aria-label="커뮤니티 검색" data-community-search />
+          <button type="submit">Search</button>
+        </form>
+        <a class="community-write" href="#">글쓰기</a>
+      </div>
+
+      <div class="gallery community-grid" data-community-grid>
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_1.jpg" alt="백패킹 피드 이미지 1" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>mtc.style</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 128개"><span aria-hidden="true">&#9825;</span><span>128</span></div>
+            </div>
+            <p class="feed-caption">이번엔 짐 좀 줄였다고 생각했는데 또 8kg 넘음.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_2.jpg" alt="백패킹 피드 이미지 2" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>backpack.log</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 74개"><span aria-hidden="true">&#9825;</span><span>74</span></div>
+            </div>
+            <p class="feed-caption">해 뜨기 전에 도착하려고 했는데 결국 늦잠 잤다.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_3.jpg" alt="백패킹 피드 이미지 3" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>trail.bound</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 92개"><span aria-hidden="true">&#9825;</span><span>92</span></div>
+            </div>
+            <p class="feed-caption">바람 때문에 텐트 치는 데만 거의 한 시간 쓴 날.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_4.jpg" alt="백패킹 피드 이미지 4" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>camp.note</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 56개"><span aria-hidden="true">&#9825;</span><span>56</span></div>
+            </div>
+            <p class="feed-caption">다음엔 물을 조금만 덜 챙겨도 될 것 같음.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/a197a93144eda924ee1f3ab03176ebc6.jpg" alt="커뮤니티 피드 이미지 5" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>ridge.note</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 213개"><span aria-hidden="true">&#9825;</span><span>213</span></div>
+            </div>
+            <p class="feed-caption">사진 보고 혹해서 갔는데 실제로는 바람이 제일 기억남.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/4acf3f7a659cc89e0575faca336bc771.jpg" alt="커뮤니티 피드 이미지 6" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>pack.room</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 89개"><span aria-hidden="true">&#9825;</span><span>89</span></div>
+            </div>
+            <p class="feed-caption">이번엔 진짜 필요한 것만 챙긴다고 했는데 또 가방 터짐.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/a12e742897c223bf9afba09f98e49a71.jpg" alt="커뮤니티 피드 이미지 7" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>weekend.bivy</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 145개"><span aria-hidden="true">&#9825;</span><span>145</span></div>
+            </div>
+            <p class="feed-caption">철수 10분 전에 해가 딱 나와서 괜히 더 있다가 옴.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/89be6ff3cd88103ccdef19779514af84.jpg" alt="커뮤니티 피드 이미지 8" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>tent.after</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 67개"><span aria-hidden="true">&#9825;</span><span>67</span></div>
+            </div>
+            <p class="feed-caption">이번 박지는 조용해서 좋았는데 물 챙기는 건 실패.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/74bc0c16639ba7ad07d037be7bb5cbd4.jpg" alt="커뮤니티 피드 이미지 9" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>zero.pack</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 118개"><span aria-hidden="true">&#9825;</span><span>118</span></div>
+            </div>
+            <p class="feed-caption">장비 줄이려고 나갔다가 필요한 장비만 더 늘어난 하루.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/92b88282ef20568bd7db93e6eae016f9.jpg" alt="커뮤니티 피드 이미지 10" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>trail.plz</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 76개"><span aria-hidden="true">&#9825;</span><span>76</span></div>
+            </div>
+            <p class="feed-caption">생각보다 추워서 새벽에 핫팩 위치만 세 번 바꿈.</p>
+          </a>
+        </article>
+
+        <article class="feed-card">
+          <a href="#">
+            <img class="feed-image" src="../sample image/feed_added/ae5c8ea35fd1ac1671ef6cd908e428ca.jpg" alt="커뮤니티 피드 이미지 11" />
+            <div class="feed-info">
+              <div class="feed-profile">
+                <img src="logo_0612/모닝텐트클럽_영문 로고.png" alt="" aria-hidden="true" />
+                <span>mtn.diary</span>
+              </div>
+              <div class="feed-likes" aria-label="하트 132개"><span aria-hidden="true">&#9825;</span><span>132</span></div>
+            </div>
+            <p class="feed-caption">다음엔 일몰 시간 계산 제대로 하고 올라가야겠다.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="사이트 정보">
+    <nav class="footer-links" aria-label="정책 및 고객지원">
+      <a href="#">고객지원</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">제휴제안</a>
+    </nav>
+    <div class="footer-info">
+      <p>모닝텐트클럽 / 사업자등록번호 000-00-00000</p>
+      <p>사업장 소재지: 서울특별시 OO구 OO로</p>
+      <p>전화: 010-0000-0000 이메일 morningtentclub@mtc.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=74"></script>
+</body>
+</html>
