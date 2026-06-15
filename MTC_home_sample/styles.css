@@ -782,6 +782,204 @@ main {
   line-height: 1.42;
 }
 
+.feed-detail-page {
+  padding-top: clamp(28px, 3.4vw, 46px);
+}
+
+.feed-detail {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.detail-back {
+  justify-self: start;
+  color: #1f5a9b;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.detail-back:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.bag-setup {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.18);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.18);
+}
+
+.bag-setup h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(21px, 2.35vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.bag-item-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.2);
+  list-style: none;
+}
+
+.bag-item-list li {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 72px;
+  align-items: baseline;
+  gap: 14px;
+  min-height: 38px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.bag-item-list span,
+.bag-item-list em {
+  color: #77736d;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bag-item-list strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bag-item-list em {
+  justify-self: end;
+  color: #4b4740;
+}
+
+.detail-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.sample-image {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.18);
+  background:
+    linear-gradient(135deg, rgba(17, 17, 17, 0.035) 25%, transparent 25%) 0 0 / 18px 18px,
+    linear-gradient(315deg, rgba(17, 17, 17, 0.035) 25%, transparent 25%) 0 0 / 18px 18px,
+    #efebe2;
+  color: rgba(17, 17, 17, 0.38);
+  font-size: clamp(22px, 3vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.main-sample {
+  margin-inline: auto;
+  aspect-ratio: 3 / 4;
+  min-height: 0;
+}
+
+.detail-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: -8px;
+}
+
+.detail-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.12);
+}
+
+.detail-dots .active {
+  background: var(--ink);
+}
+
+.detail-copy {
+  display: grid;
+  gap: 12px;
+  color: #2a2723;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.58;
+}
+
+.detail-copy p {
+  margin: 0;
+}
+
+.tagged-gear {
+  display: grid;
+  gap: 16px;
+  padding: 0 0 8px;
+  border-top: 0;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.gear-card {
+  display: grid;
+  gap: 7px;
+}
+
+.gear-sample {
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  border-color: transparent;
+  border-radius: 8px;
+  background: #f0efeb;
+  font-size: 15px;
+}
+
+.gear-card p,
+.gear-card h3 {
+  margin: 0;
+}
+
+.gear-type {
+  color: #8b8984;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.gear-card h3 {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.gear-card p:last-child {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .site-footer {
   position: relative;
   width: min(100%, var(--page-max));
@@ -931,6 +1129,10 @@ main {
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .gear-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 560px) {
@@ -953,6 +1155,27 @@ main {
 
   .feed-image {
     aspect-ratio: 1 / 1.15;
+  }
+
+  .feed-detail {
+    gap: 22px;
+  }
+
+  .bag-setup {
+    padding-block: 16px;
+  }
+
+  .bag-item-list li {
+    grid-template-columns: 54px minmax(0, 1fr) 58px;
+    gap: 10px;
+  }
+
+  .main-sample {
+    min-height: 0;
+  }
+
+  .gear-grid {
+    grid-template-columns: 1fr;
   }
 
   .site-footer {
